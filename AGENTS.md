@@ -15,6 +15,19 @@ Break lines at logical boundaries, choosing the largest unit that fits:
 Tables, code blocks, and URLs are exempt when reformatting them would
 be awkward or would change their meaning.
 
+## License headers
+
+Every source code file starts with this block, written in the comment
+syntax of the file's language (`//` for C-style languages, `#` for
+Python and shell, `--` for SQL and Lua, `<!-- -->` for HTML, and so
+on). Keep the wording unchanged.
+
+```
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/.
+```
+
 ## Agent skills
 
 ### Issue tracker
