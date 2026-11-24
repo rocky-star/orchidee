@@ -6,12 +6,12 @@ eventual homes.
 
 ## Contexts
 
-- **Compositor** — `src/compositor/GLOSSARY.md`: the native layer.
-  Owns the terminal backend, input decoding, the surface tree, the
-  rendering pipeline, and the C ABI.
-- **Python layer** — `src/python/GLOSSARY.md`: the first per-language
-  layer. Owns widgets, event dispatch, window management, and async
-  integration.
+- **Compositor** — [src/compositor/GLOSSARY.md](./src/compositor/GLOSSARY.md):
+  the native layer. Owns the terminal backend, input decoding, the
+  surface tree, the rendering pipeline, and the C ABI.
+- **Python layer** — `src/python/GLOSSARY.md` (not yet created): the
+  first per-language layer. Owns widgets, event dispatch, window
+  management, and async integration.
 
 ## Relationships
 

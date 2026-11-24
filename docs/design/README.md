@@ -20,7 +20,7 @@ Ticket names match their GitHub issue titles.
 
 | Page | Topic | Ticket | Status |
 | --- | --- | --- | --- |
-| `capabilities.md` | Capability model and downgrade policy | [Capability model and downgrade policy](https://github.com/rocky-star/orchidee/issues/9) | planned |
+| [capabilities.md](capabilities.md) | Capability model and downgrade policy | [Capability model and downgrade policy](https://github.com/rocky-star/orchidee/issues/9) | written |
 | `terminal-backend.md` | Backend lifecycle and terminal modes | [Terminal backend lifecycle and modes](https://github.com/rocky-star/orchidee/issues/10) | planned |
 | `surface-tree.md` | Surface tree and scene model | [Surface tree and scene model](https://github.com/rocky-star/orchidee/issues/11) | planned |
 | `frame-model.md` | Cell, attribute, and frame model | [Cell, attribute, and frame model](https://github.com/rocky-star/orchidee/issues/12) | planned |
