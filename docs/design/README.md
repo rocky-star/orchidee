@@ -14,7 +14,7 @@ Ticket names match their GitHub issue titles.
 
 | Page | Topic | Ticket | Status |
 | --- | --- | --- | --- |
-| `architecture.md` | Layers, boundaries, and vocabulary | [Foundation and dependency policy](https://github.com/rocky-star/orchidee/issues/7) | planned |
+| [architecture.md](architecture.md) | Layers, boundaries, and dependency policy | [Foundation and dependency policy](https://github.com/rocky-star/orchidee/issues/7) | written |
 
 ### Compositor (core layer)
 
