@@ -32,3 +32,32 @@ _Avoid_: default terminal, built-in terminfo
 The source a capability value came from, such as a terminal
 description, the environment, an override, or a fallback tier.
 _Avoid_: origin, source
+
+## Terminal backend
+
+**Terminal backend**:
+The Compositor component that holds the terminal for a session: it owns
+the saved terminal settings, the mode set, and every byte written to
+the screen.
+_Avoid_: terminal driver, screen, tty layer
+
+**Session**:
+One period of terminal ownership, from enter to leave, including any
+suspensions in between.
+_Avoid_: run, instance, connection
+
+**Mode set**:
+The terminal modes a session turns on — raw input, alternate screen,
+mouse, paste, focus, keyboard protocol — each gated by the capability
+snapshot, enabled as one set on enter and disabled as one set on leave.
+_Avoid_: terminfo flags, feature set, terminal options
+
+**Restore script**:
+The precomposed, unconditional byte sequence that returns the terminal
+to the state the backend found it in.
+_Avoid_: cleanup, teardown, reset
+
+**Suspend**:
+Leaving the terminal so a stopped job or a spawned program can use it,
+followed by an enter when the backend resumes.
+_Avoid_: pause, detach, background
