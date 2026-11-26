@@ -23,7 +23,7 @@ Ticket names match their GitHub issue titles.
 | [capabilities.md](capabilities.md) | Capability model and downgrade policy | [Capability model and downgrade policy](https://github.com/rocky-star/orchidee/issues/9) | written |
 | [terminal-backend.md](terminal-backend.md) | Backend lifecycle and terminal modes | [Terminal backend lifecycle and modes](https://github.com/rocky-star/orchidee/issues/10) | written |
 | `surface-tree.md` | Surface tree and scene model | [Surface tree and scene model](https://github.com/rocky-star/orchidee/issues/11) | planned |
-| `frame-model.md` | Cell, attribute, and frame model | [Cell, attribute, and frame model](https://github.com/rocky-star/orchidee/issues/12) | planned |
+| [frame-model.md](frame-model.md) | Cell, attribute, and frame model | [Cell, attribute, and frame model](https://github.com/rocky-star/orchidee/issues/12) | written |
 | `present-pipeline.md` | Present and flush pipeline | [Present and flush pipeline](https://github.com/rocky-star/orchidee/issues/13) | planned |
 | `input-decoding.md` | Input decoding and event taxonomy | [Input decoding and core event taxonomy](https://github.com/rocky-star/orchidee/issues/14) | planned |
 | `unicode-text.md` | Text, grapheme, and width model | [Unicode text and grapheme model](https://github.com/rocky-star/orchidee/issues/15) | planned |

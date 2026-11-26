@@ -2,8 +2,7 @@
 
 The native layer of Orchidée: terminal backend, input decoding, the
 surface tree, rendering, and the C ABI. This glossary fixes the
-vocabulary of terminal capability handling before it spreads into
-implementation.
+Compositor's vocabulary before it spreads into implementation.
 
 ## Capabilities
 
@@ -61,3 +60,37 @@ _Avoid_: cleanup, teardown, reset
 Leaving the terminal so a stopped job or a spawned program can use it,
 followed by an enter when the backend resumes.
 _Avoid_: pause, detach, background
+
+## Rendering
+
+**Cell**:
+One column of the screen's character grid: the text shown there and the
+style it is drawn in. A character two columns wide occupies two adjacent
+cells, the second of which carries no text.
+_Avoid_: character, position, slot
+
+**Continuation cell**:
+The second of the two cells a two-column character occupies; it holds no
+text of its own and exists only to give the glyph its second column.
+_Avoid_: trailer, shadow cell, blank cell
+
+**Style**:
+The foreground and background colour of a cell together with its
+abstract attributes, such as bold or reverse.
+_Avoid_: attribute, format, appearance
+
+**Frame**:
+The complete grid of cells composed for the screen at one point,
+together with the cursor state; what presentation compares against what
+the terminal has already been sent.
+_Avoid_: screen, buffer, snapshot
+
+**Clear style**:
+The style given to cells nothing has drawn; the screen's background.
+_Avoid_: default colour, background colour
+
+**Display width**:
+The number of columns a text cluster occupies under the Compositor's
+rules, which is not always its number of code points or its raw Unicode
+width; a lone combining mark is drawn on a base and counts as one.
+_Avoid_: string length, character count
